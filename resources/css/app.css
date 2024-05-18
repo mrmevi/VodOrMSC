@@ -1,0 +1,5 @@
+@import '/node_modules/flowbite-vue/dist/index.css';
+@import 'ckeditor-tailwind-reset/ckeditor-tailwind-reset.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

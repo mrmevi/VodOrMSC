@@ -1,0 +1,67 @@
+<script>
+import {defineComponent, ref} from 'vue'
+import PostsLayout from "@/Layouts/PostsLayout.vue";
+import {FwbCarousel} from 'flowbite-vue';
+import GalleryForLg from "@/Components/OnePost/GalleryForLg.vue";
+import SliderForSmV2 from "@/Components/OnePost/SliderForSmV2.vue";
+
+export default defineComponent({
+    name: "OnePostPage",
+    components: {PostsLayout, FwbCarousel, SliderForSmV2, GalleryForLg},
+    props: {
+        post: Object,
+        images: Array,
+    },
+    /*setup(props) {
+
+        let img = [];
+
+        for (let image in props.post.data.images) {
+            img.push({src: props.post.data.images[image].url, alt: 'похуй'});
+        }
+
+        const images = img
+
+        return {
+            images
+        };
+    }*/
+
+})
+</script>
+
+<template>
+    <PostsLayout>
+        <div class="mt-20 xl:mt-36 px-12 xl:px-20 2xl:px-28">
+            <div class="text-center mx-auto max-w-[900px]">
+                <h1 class="mb-10 font-sans font-bold text-4xl 2xl:text-5xl">{{ post.data.title }}</h1>
+                <p class="mb-10 font-sans text-justify text-gray-700 font-normal text-xl 2xl:text-2xl indent-8 mx-auto max-w-[700px]">
+                    {{ post.data.description }}
+                </p>
+                <p class="mb-5 text-left font-sans font-medium text-sm 2xl:text-base mx-auto max-w-[700px]">
+                    {{ post.data.place }} | {{ post.data.date }}
+                </p>
+            </div>
+
+            <img class="mx-auto max-h-[600px] xl:max-h-[600px] 2xl:max-h-[750px] mt-16"
+                 :src="post.data.thumbnail" alt="">
+
+            <div>
+                <p v-html="post.data.content" class="mt-10 font-sans text-justify text-gray-700 font-normal text-xl 2xl:text-2xl indent-8 mx-auto max-w-[900px]">
+                </p>
+            </div>
+
+            <div class="mt-12 mx-auto xl:hidden max-w-[750px]">
+                <SliderForSmV2 :images="images"></SliderForSmV2>
+            </div>
+
+            <div class="mt-12 max-xl:hidden mx-auto max-w-[900px]">
+                <GalleryForLg :images="images"></GalleryForLg>
+            </div>
+        </div>
+    </PostsLayout>
+</template>
+
+<style>
+
+</style>
