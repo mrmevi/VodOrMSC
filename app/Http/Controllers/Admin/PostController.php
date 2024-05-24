@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\PostRequest;
 use App\Models\Image;
 use App\Models\Post;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
@@ -52,8 +53,11 @@ class PostController extends Controller
             unset($data['$files']);
         }
 
+
         if ($request->hasFile('thumbnail')){
-            $data['thumbnail'] = $request->file('thumbnail')->store('images/posts/thumbnails');
+            $name = md5(Carbon::now() . '_' . $data['thumbnail']->getClientOriginalName()) . '.' . $data['thumbnail']->getClientOriginalExtension();
+            $filePath = Storage::disk('public')->putFileAs('/images/posts/thumbnails', $data['thumbnail'], $name);
+            $data['thumbnail'] = $filePath;
         }
 
         $post = Post::create($data);
