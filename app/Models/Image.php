@@ -23,7 +23,7 @@ class Image extends Model
             $filePath = Storage::disk('public')->putFileAs('/images/posts/' . $post_id, $image, $name);
             Image::create([
                 'path' => $filePath,
-                'url' => url('/public/storage/uploads/' . $filePath),
+                'url' => url('/storage/uploads/' . $filePath),
                 'post_id' => $post_id,
             ]);
         }

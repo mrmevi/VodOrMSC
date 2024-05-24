@@ -20,7 +20,7 @@ class PostResourceNotImages extends JsonResource
             'slug' => $this->slug,
             'description' => $this->description,
             'content' => $this->content,
-            'thumbnail' => '/public/storage/uploads/' . $this->thumbnail,
+            'thumbnail' => '/storage/uploads/' . $this->thumbnail,
             'place' => $this->place,
             'date' => $this->date,
         ];
