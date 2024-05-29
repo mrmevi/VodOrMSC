@@ -39,13 +39,13 @@ export default defineComponent({
                 </div>
                 <div class="flex justify-center mt-4 lg:mt-0">
                     <button type="button" class="rounded-lg px-4 py-1">
-                        <img src="../../assets/images/SocialIconsYouTube.svg" class="h-8" alt="SocialIconsYouTube">
+                        <img src="../../../assets/images/SocialIconsYouTube.svg" class="h-8" alt="SocialIconsYouTube">
                     </button>
                     <button type="button" class="rounded-lg px-4 py-1 ">
-                        <img src="../../assets/images/SocialIconsTG.svg" class="h-8" alt="SocialIconsTG">
+                        <img src="../../../assets/images/SocialIconsTG.svg" class="h-8" alt="SocialIconsTG">
                     </button>
                     <button type="button" class="rounded-lg px-4 py-1 ">
-                        <img src="../../assets/images/SocialIconsVK.svg" class="h-8" alt="SocialIconsVK">
+                        <img src="../../../assets/images/SocialIconsVK.svg" class="h-8" alt="SocialIconsVK">
                     </button>
                 </div>
             </div>

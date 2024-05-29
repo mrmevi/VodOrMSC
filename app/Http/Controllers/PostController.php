@@ -12,7 +12,7 @@ class PostController extends Controller{
 
     public function index(){
         $posts = Post::orderBy('date', 'desc')->paginate(5);
-        return Inertia::render('Front/PostsPage', [
+        return Inertia::render('Front/PostsListPage', [
             'posts' => PostResource::collection($posts)
         ]);
     }
@@ -24,7 +24,7 @@ class PostController extends Controller{
         $images = $post->images;
 
 
-        return Inertia::render('Front/OnePostPage', [
+        return Inertia::render('Front/SinglePostViewPage', [
             'post' => new PostResourceNotImages($post),
             'images' => $images
         ]);

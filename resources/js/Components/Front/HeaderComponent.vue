@@ -44,17 +44,17 @@ export default defineComponent({
 
                 <button type="button" class="rounded-lg py-1 ">
                     <Link href="#">
-                        <img src="../../assets/images/SocialIconsYouTube.svg" class="h-8" alt="SocialIconsYouTube">
+                        <img src="../../../assets/images/SocialIconsYouTube.svg" class="h-8" alt="SocialIconsYouTube">
                     </Link>
                 </button>
                 <button type="button" class="rounded-lg py-1 ">
                     <Link href="#">
-                        <img src="../../assets/images/SocialIconsTG.svg" class="h-8" alt="SocialIconsTG">
+                        <img src="../../../assets/images/SocialIconsTG.svg" class="h-8" alt="SocialIconsTG">
                     </Link>
                 </button>
                 <button type="button" class="rounded-lg py-1 ">
                     <a href="https://vk.com/ro_vod_otcy_rossii_msk" target="_blank">
-                        <img src="../../assets/images/SocialIconsVK.svg" class="h-8" alt="SocialIconsVK">
+                        <img src="../../../assets/images/SocialIconsVK.svg" class="h-8" alt="SocialIconsVK">
                     </a>
                 </button>
             </div>

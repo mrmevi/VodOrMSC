@@ -1,21 +1,19 @@
 <script>
 import {defineComponent} from 'vue'
-import HomeLayout from "@/Layouts/HomeLayout.vue";
-import AboutUs from "@/Components/Home/AboutUs.vue";
-import NewsListAd from "@/Components/Home/NewsListAd.vue";
-import BannerFrontAd from "@/Components/Home/BannerFrontAd.vue";
-import AboutUsAs from "@/Components/Home/AboutUsAs.vue";
-import AuthorsAs from "@/Components/Home/AuthorsAs.vue";
+
+import HomeLayout from "@/Layouts/Front/HomeLayout.vue";
+
+import BannerHomeComponent from "@/Components/Front/Home/BannerHomeComponent.vue";
+import NewsListHomeComponent from "@/Components/Front/Home/NewsListHomeComponent.vue";
+import AboutHomeComponent from "@/Components/Front/Home/AboutHomeComponent.vue";
 
 export default defineComponent({
     name: "HomePage",
     components: {
         HomeLayout,
-        BannerFrontAd,
-        NewsListAd,
-        AboutUs,
-        AboutUsAs,
-        AuthorsAs,
+        BannerHomeComponent,
+        NewsListHomeComponent,
+        AboutHomeComponent,
     },
     props:{
         posts: Object,
@@ -27,10 +25,9 @@ export default defineComponent({
 
 <template>
     <HomeLayout>
-        <BannerFrontAd></BannerFrontAd>
-        <NewsListAd :posts="posts" :firstPost="firstPost"></NewsListAd>
-        <AboutUsAs></AboutUsAs>
-        <AuthorsAs></AuthorsAs>
+        <BannerHomeComponent></BannerHomeComponent>
+        <NewsListHomeComponent :posts="posts" :firstPost="firstPost"></NewsListHomeComponent>
+        <AboutHomeComponent></AboutHomeComponent>
     </HomeLayout>
 </template>
 

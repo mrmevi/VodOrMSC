@@ -1,8 +1,10 @@
 <script>
 import {defineComponent} from 'vue'
-import AdminLayout from "@/Layouts/Admin/AdminLayout.vue";
 import {Link, useForm} from "@inertiajs/vue3";
 import route from "ziggy-js";
+
+import AdminLayout from "@/Layouts/Admin/AdminLayout.vue";
+
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import CKEditor from '@ckeditor/ckeditor5-vue';
 

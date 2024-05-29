@@ -1,8 +1,10 @@
 <script>
 import {defineComponent, ref} from 'vue'
-import AdminLayout from "@/Layouts/Admin/AdminLayout.vue";
-import {Link, useForm} from "@inertiajs/vue3";
+import {useForm} from "@inertiajs/vue3";
 import route from "ziggy-js";
+
+import AdminLayout from "@/Layouts/Admin/AdminLayout.vue";
+
 import {FwbFileInput} from "flowbite-vue";
 
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
@@ -153,6 +155,6 @@ export default defineComponent({
     </AdminLayout>
 </template>
 
-<style scoped>
+<style>
 
 </style>

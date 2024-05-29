@@ -4,7 +4,7 @@ import {Link} from "@inertiajs/vue3";
 import route from "ziggy-js";
 
 export default defineComponent({
-    name: "Banner",
+    name: "BannerFront",
     methods: {route},
     components:{
         Link,
@@ -16,7 +16,7 @@ export default defineComponent({
     <section class="bg-center bg-no-repeat lg:bg-[url(/resources/assets/images/Banner3.jpg)] max-h-[740px] lg:bg-gray-200 bg-blend-multiply">
        <div class="max-lg:mt-8 lg:flex lg:mx-12 xl:mx-16 2xl:mx-28 3xl:mx-36 4xl:mx-48 items-center lg:space-x-8">
            <div class="max-lg:hidden mx-auto pt-8 items-center justify-center sm:max-xl:w-1/2">
-               <img src="../../../assets/images/BigLogoPNG.png" alt="">
+               <img src="../../../../assets/images/BigLogoPNG.png" alt="">
            </div>
            <div class="2xl:pl-24 text-center mx-auto w-1/2 lg:py-52">
                <div class="2xl:w-fit sm:max-lg:mt-12 xl:mx-auto">

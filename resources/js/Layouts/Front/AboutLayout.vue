@@ -1,29 +1,29 @@
 <script>
 import {defineComponent} from 'vue'
 import {Head} from "@inertiajs/vue3";
-import HeaderFrontAd from "@/Components/HeaderFrontAd.vue";
-import FooterAs from "@/Components/FooterAs.vue";
+
+import HeaderComponent from "@/Components/Front/HeaderComponent.vue";
+import FooterComponent from "@/Components/Front/FooterComponent.vue";
 
 export default defineComponent({
-    name: "AboutUsLayout",
+    name: "AboutLayout",
     components: {
-        HeaderFrontAd,
-        FooterAs,
+        HeaderComponent,
+        FooterComponent,
         Head,
     }
 })
 </script>
 
-
 <template>
     <Head>
         <title>ВОД ОР по МСК | О Нас</title>
     </Head>
-    <HeaderFrontAd></HeaderFrontAd>
+    <HeaderComponent></HeaderComponent>
     <div>
         <slot/>
     </div>
-    <FooterAs></FooterAs>
+    <FooterComponent></FooterComponent>
 </template>
 
 <style>

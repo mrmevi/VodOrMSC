@@ -1,6 +1,6 @@
 <template>
     <Carousel  v-bind="settings" :breakpoints="breakpoints">
-        <Slide v-for="(img, id) in images" :key="images.length">
+        <Slide v-for="(img) in images" :key="images.length">
             <div class="carousel__item "><img alt="image" :src="img.url"></div>
         </Slide>
 
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
+import { defineComponent} from 'vue'
 import { Carousel, Navigation, Slide, Pagination } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 export default defineComponent({

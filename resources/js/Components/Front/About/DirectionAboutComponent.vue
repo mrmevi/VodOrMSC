@@ -18,7 +18,7 @@ name: "DirectionAboutUsComponent"
                     Спорт объединяет нас и делает нашу жизнь более насыщенной и интересной. Кроме того, спортивные мероприятия становятся отличным поводом для общения и новых знакомств. Участники этих событий делятся опытом, поддерживают друг друга, помогают в достижении поставленных целей.
                 </p>
             </div>
-            <img class="mx-auto" src="../../../assets/images/Sport.jpg" alt="">
+            <img class="mx-auto" src="../../../../assets/images/Sport.jpg" alt="">
         </div>
         <div class="">
             <div class="mt-8 text-center max-w-[1280px] mx-auto">
@@ -30,7 +30,7 @@ name: "DirectionAboutUsComponent"
                     Цель таких мероприятий направлена на формирование у граждан глубокого чувства принадлежности к своей стране, уважения к ее истории, традициям и культуре, а также на готовность защищать ее интересы. Военно-патриотическое воспитание включает в себя не только обучение истории своей страны и знакомство с ее военным прошлым, но и формирование духовных ценностей, таких как честь, мужество, самопожертвование и патриотизм. Эти качества необходимы для обеспечения безопасности и процветания государства.
                 </p>
             </div>
-            <img class="mx-auto" src="../../../assets/images/Patriot.jpg" alt="">
+            <img class="mx-auto" src="../../../../assets/images/Patriot.jpg" alt="">
         </div>
     </div>
 
@@ -45,10 +45,10 @@ name: "DirectionAboutUsComponent"
                     Спорт объединяет нас и делает нашу жизнь более насыщенной и интересной. Кроме того, спортивные мероприятия становятся отличным поводом для общения и новых знакомств. Участники этих событий делятся опытом, поддерживают друг друга, помогают в достижении поставленных целей.
                 </p>
             </div>
-            <img class="mx-auto w-1/2" src="../../../assets/images/Sport.jpg" alt="">
+            <img class="mx-auto w-1/2" src="../../../../assets/images/Sport.jpg" alt="">
         </div>
         <div class="flex space-x-8">
-            <img class="mr-12 w-1/2" src="../../../assets/images/Patriot.jpg" alt="">
+            <img class="mr-12 w-1/2" src="../../../../assets/images/Patriot.jpg" alt="">
             <div class=" w-1/2 my-auto max-w-[1280px] ">
                 <h1 class="mb-6 font-sans font-bold text-3xl">Военно-патриотическое воспитание</h1>
                 <h2 class="mb-6 text-justify font-sans font-bold text-1xl ">

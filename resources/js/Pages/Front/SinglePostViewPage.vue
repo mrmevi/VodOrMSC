@@ -1,32 +1,25 @@
 <script>
-import {defineComponent, ref} from 'vue'
-import PostsLayout from "@/Layouts/PostsLayout.vue";
+import {defineComponent} from 'vue'
+
+import PostsLayout from "@/Layouts/Front/PostsLayout.vue";
+
+import GalleryForDesktop from "@/Components/Front/SinglePostView/GalleryForDesktop.vue";
+import SliderForPhone from "@/Components/Front/SinglePostView/SliderForPhone.vue";
+
 import {FwbCarousel} from 'flowbite-vue';
-import GalleryForLg from "@/Components/OnePost/GalleryForLg.vue";
-import SliderForSmV2 from "@/Components/OnePost/SliderForSmV2.vue";
 
 export default defineComponent({
-    name: "OnePostPage",
-    components: {PostsLayout, FwbCarousel, SliderForSmV2, GalleryForLg},
+    name: "SinglePostViewPage",
+    components: {
+        PostsLayout,
+        SliderForPhone,
+        GalleryForDesktop,
+        FwbCarousel,
+    },
     props: {
         post: Object,
         images: Array,
     },
-    /*setup(props) {
-
-        let img = [];
-
-        for (let image in props.post.data.images) {
-            img.push({src: props.post.data.images[image].url, alt: 'похуй'});
-        }
-
-        const images = img
-
-        return {
-            images
-        };
-    }*/
-
 })
 </script>
 
@@ -52,11 +45,11 @@ export default defineComponent({
             </div>
 
             <div class="mt-12 mx-auto xl:hidden max-w-[750px]">
-                <SliderForSmV2 :images="images"></SliderForSmV2>
+                <SliderForPhone :images="images"></SliderForPhone>
             </div>
 
             <div class="mt-12 max-xl:hidden mx-auto max-w-[900px]">
-                <GalleryForLg :images="images"></GalleryForLg>
+                <GalleryForDesktop :images="images"></GalleryForDesktop>
             </div>
         </div>
     </PostsLayout>

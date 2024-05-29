@@ -1,12 +1,11 @@
 <script>
 import {defineComponent} from 'vue'
 import {Head} from "@inertiajs/vue3";
-import HeaderFront from "@/Components/HeaderFront.vue";
-import HeaderAdmin from "@/Components/Admin/HeaderAdmin.vue";
+import AdminHeaderComponent from "@/Components/Admin/AdminHeaderComponent.vue";
 
 export default defineComponent({
     name: "AdminLayout",
-    components: {HeaderAdmin, HeaderFront, Head}
+    components: {AdminHeaderComponent, Head}
 })
 </script>
 
@@ -14,7 +13,7 @@ export default defineComponent({
     <Head>
         <title>Отцы России | Админка</title>
     </Head>
-    <HeaderAdmin></HeaderAdmin>
+    <AdminHeaderComponent></AdminHeaderComponent>
     <div>
         <slot/>
     </div>

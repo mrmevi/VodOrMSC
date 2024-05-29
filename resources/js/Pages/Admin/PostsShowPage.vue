@@ -1,8 +1,9 @@
 <script>
 import {defineComponent} from 'vue'
-import AdminLayout from "@/Layouts/Admin/AdminLayout.vue";
 import {Link} from "@inertiajs/vue3";
 import route from "ziggy-js";
+
+import AdminLayout from "@/Layouts/Admin/AdminLayout.vue";
 
 export default defineComponent({
     name: "PostShowPage",

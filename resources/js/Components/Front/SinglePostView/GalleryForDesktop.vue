@@ -2,7 +2,7 @@
     <div class="">
         <Carousel id="gallery" :items-to-show="1" :wrap-around="false" v-model="currentSlide">
 
-            <Slide v-for="(img, id) in images" :key="images.length">
+            <Slide v-for="(img) in images" :key="images.length">
                 <div class="carousel__item  max-h-[600px]"><img alt="" :src="img.url"></div>
             </Slide>
         </Carousel>

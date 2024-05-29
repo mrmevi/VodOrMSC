@@ -8,7 +8,7 @@ export default defineComponent({
 
 <template>
     <div class="mt-12 max-w-[1280px] mx-auto">
-        <img  class="mx-auto" src="../../../assets/images/AboutUsBanner.jpg" alt="">
+        <img class="mx-auto" src="../../../../assets/images/AboutUsBanner.jpg" alt="">
         <div class="bg-gray-100 xl:flex">
             <div class="my-8 xl:my-20 ml-4 xl:ml-12 max-xl:mr-12 xl:w-1/2">
                 <p class="mb-6 font-sans text-gray-700 font-semibold text-sm ">НАШИ ЦЕЛИ</p>

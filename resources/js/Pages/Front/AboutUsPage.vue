@@ -1,34 +1,34 @@
 <script>
 import {defineComponent} from 'vue'
-import AboutUsLayout from "@/Layouts/AboutUsLayout.vue";
-import AuthorsAboutUsComponent from "@/Components/AboutUs/AuthorsAboutUsComponent.vue";
-import BannerAboutUsComponent from "@/Components/AboutUs/BannerAboutUsComponent.vue";
-import DescriptionAboutUsComponent from "@/Components/AboutUs/DescriptionAboutUsComponent.vue";
-import DirectionAboutUsComponent from "@/Components/AboutUs/DirectionAboutUsComponent.vue";
-import DirectionAboutUsComponentForSm from "@/Components/AboutUs/DirectionAboutUsComponentForSm.vue";
+
+import AboutLayout from "@/Layouts/Front/AboutLayout.vue";
+
+import DescriptionAboutComponent from "@/Components/Front/About/DescriptionAboutComponent.vue";
+import BannerAboutComponent from "@/Components/Front/About/BannerAboutComponent.vue";
+import DirectionAboutComponent from "@/Components/Front/About/DirectionAboutComponent.vue";
+import AuthorsAboutComponent from "@/Components/Front/About/AuthorsAboutComponent.vue";
 
 export default defineComponent({
     name: "AboutUsPage",
     components: {
-        AboutUsLayout,
-        DescriptionAboutUsComponent,
-        BannerAboutUsComponent,
-        DirectionAboutUsComponent,
-        DirectionAboutUsComponentForSm,
-        AuthorsAboutUsComponent,
+        AboutLayout,
+        DescriptionAboutComponent,
+        BannerAboutComponent,
+        DirectionAboutComponent,
+        AuthorsAboutComponent,
     }
 })
 </script>
 
 <template>
-    <AboutUsLayout>
+    <AboutLayout>
         <div class="mt-20 xl:mt-36 px-14 xl:px-20 2xl:px-28">
-            <DescriptionAboutUsComponent></DescriptionAboutUsComponent>
-            <BannerAboutUsComponent></BannerAboutUsComponent>
-            <DirectionAboutUsComponent></DirectionAboutUsComponent>
-            <AuthorsAboutUsComponent></AuthorsAboutUsComponent>
+            <DescriptionAboutComponent></DescriptionAboutComponent>
+            <BannerAboutComponent></BannerAboutComponent>
+            <DirectionAboutComponent></DirectionAboutComponent>
+            <AuthorsAboutComponent></AuthorsAboutComponent>
         </div>
-    </AboutUsLayout>
+    </AboutLayout>
 </template>
 
 <style scoped>
