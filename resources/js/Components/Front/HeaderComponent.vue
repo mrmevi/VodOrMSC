@@ -30,7 +30,7 @@ export default defineComponent({
     <nav class="bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200">
         <div class="mx-6 lg:mx-8 xl:mx-10 2xl:mx-16 3xl:mx-24 flex flex-wrap items-center justify-between py-2">
             <Link :href="route('home.page')" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <span class="text-white self-center text-2xl font-semibold whitespace-nowrap ">ОТЦЫ РОССИИ</span>
+                <img class="h-10" src="../../../assets/images/LogoHeader.png" alt="logoHeader">
             </Link>
             <div class="flex md:order-2 space-x-4 lg:space-x-3 rtl:space-x-reverse">
 
