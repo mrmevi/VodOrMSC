@@ -18,14 +18,14 @@ export default defineComponent({
            <div class="max-lg:hidden mx-auto pt-8 items-center justify-center sm:max-xl:w-1/2">
                <img src="../../../../assets/images/BigLogoPNG.png" alt="">
            </div>
-           <div class="2xl:pl-24 text-center mx-auto w-1/2 lg:py-52">
+           <div class="2xl:pl-24 text-center px-8 sm:px-14 lg:px-0 mx-auto lg:w-1/2 lg:py-52">
                <div class="2xl:w-fit sm:max-lg:mt-12 xl:mx-auto">
-                   <h1 class="mb-2 2xl:text-left sm:text-2xl mb:text-3xl text-blue-700 font-extrabold tracking-tight leading-none">Всеросийсcкое общественное движение</h1>
-                   <h1 class="mb-2 sm:text-4xl mb:text-6xl text-blue-700 font-extrabold tracking-tight leading-none">Отцы России</h1>
-                   <h1 class="mb-4 sm:text-2xl mb:text-3xl text-blue-700 font-extrabold tracking-tight leading-none">по Московской области</h1>
+                   <p class="mb-4 font-sans text-blue-800 font-bold text-xl sm:text-2xl xl:text-3xl">Всеросийсское общесвтенное движение</p>
+                   <h1 class="mb-2 font-sans text-blue-800 font-bold text-4xl sm:text-5xl xl:text-6xl">Отцы России</h1>
+                   <h2 class="font-sans text-blue-800 font-bold text-xl sm:text-2xl xl:text-3xl">по Московской области</h2>
                </div>
-               <p class="mb-8 text-justify text-lg font-normal text-gray-900 indent-5">Движение призвано объединить инициативных, неравнодушных мужчин со всей России для привлечения внимания к проблеме ответственного отцовства и оказанию реальной помощи нашим детям.</p>
-               <div class="flex sm:max-xl:mx-auto flex-col space-y-4 w-fit">
+               <p class="pt-6 mb-8 text-justify text-lg font-normal text-gray-900 indent-5">Движение призвано объединить инициативных, неравнодушных мужчин со всей России для привлечения внимания к проблеме ответственного отцовства и оказанию реальной помощи нашим детям.</p>
+               <div class="flex mm:max-lg:mx-auto flex-col space-y-4 w-fit">
                    <Link :href="route('aboutUs.page')" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                        Подробнее
                        <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

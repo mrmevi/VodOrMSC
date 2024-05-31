@@ -25,10 +25,10 @@ export default defineComponent({
 
 <template>
     <PostsLayout>
-        <div class="mt-20 xl:mt-36 px-12 xl:px-20 2xl:px-28">
+        <div class="mt-20 xl:mt-36 px-8 sm:px-12 xl:px-20 2xl:px-28">
             <div class="text-center mx-auto max-w-[900px]">
-                <h1 class="mb-10 font-sans font-bold text-4xl 2xl:text-5xl">{{ post.data.title }}</h1>
-                <p class="mb-10 font-sans text-justify text-gray-700 font-normal text-xl 2xl:text-2xl indent-8 mx-auto max-w-[700px]">
+                <h1 class="mb-10 font-sans font-bold text-2xl sm:text-4xl 2xl:text-5xl">{{ post.data.title }}</h1>
+                <p class="mb-10 font-sans text-justify text-gray-700 font-normal text-sm sm:text-xl 2xl:text-2xl indent-8 mx-auto max-w-[700px]">
                     {{ post.data.description }}
                 </p>
                 <p class="mb-5 text-left font-sans font-medium text-sm 2xl:text-base mx-auto max-w-[700px]">
@@ -40,7 +40,7 @@ export default defineComponent({
                  :src="post.data.thumbnail" alt="">
 
             <div>
-                <p v-html="post.data.content" class="mt-10 font-sans text-justify text-gray-700 font-normal text-xl 2xl:text-2xl indent-8 mx-auto max-w-[900px]">
+                <p v-html="post.data.content" class="mt-10 font-sans text-justify text-gray-700 font-normal text-base sm:text-xl 2xl:text-2xl indent-8 mx-auto max-w-[900px]">
                 </p>
             </div>
 

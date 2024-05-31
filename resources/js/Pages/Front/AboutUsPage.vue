@@ -22,7 +22,7 @@ export default defineComponent({
 
 <template>
     <AboutLayout>
-        <div class="mt-20 xl:mt-36 px-14 xl:px-20 2xl:px-28">
+        <div class="mt-20 xl:mt-36 px-8 sm:px-14 xl:px-20 2xl:px-28">
             <DescriptionAboutComponent></DescriptionAboutComponent>
             <BannerAboutComponent></BannerAboutComponent>
             <DirectionAboutComponent></DirectionAboutComponent>

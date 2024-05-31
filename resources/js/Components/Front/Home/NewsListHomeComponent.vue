@@ -15,7 +15,7 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="px-14 xl:px-20 2xl:px-28 lg:flex lg:space-x-16 xl:space-x-24 2xl:space-x-36 mt-32 lg:mt-64">
+    <div class="px-8 sm:px-14 xl:px-20 2xl:px-28 lg:flex lg:space-x-16 xl:space-x-24 2xl:space-x-36 mt-32 lg:mt-64">
 
 
         <div v-if="firstPost" class="lg:w-1/2">
@@ -77,7 +77,7 @@ export default defineComponent({
                 </Link>
             </div>
             <Link :href="route('posts.page')"
-                  class="sm:max-lg:hidden text-center block sm:absolute sm:bottom-0 sm:right-0 text-indigo-800">перейти
+                  class="max-lg:hidden text-center block sm:absolute sm:bottom-0 sm:right-0 text-indigo-800">перейти
                 ко всем
             </Link>
         </div>

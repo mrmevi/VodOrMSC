@@ -16,8 +16,8 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="px-14 xl:px-20 2xl:px-28 mt-20">
-        <h1 class="mb-8 divide-solid font-sans font-bold text-5xl indent-24">Все новости</h1>
+    <div class="px-8 sm:px-14 xl:px-20 2xl:px-28 mt-20">
+        <h1 class="mb-8 divide-solid font-sans font-bold text-center lg:text-left text-2xl sm:text-5xl lg:indent-24">Все новости</h1>
         <hr class="mb-16 h-px bg-gray-300 border-0">
 
         <div v-for="(post, id) in posts" :key="id"
@@ -30,9 +30,9 @@ export default defineComponent({
 
 
             <div class="py-8 2xl:py-14 max-xl:mx-auto max-w-[700px]">
-                <p class="mb-5 font-sans font-medium text-2xl">{{post.place}} | {{post.date}}</p>
-                <Link :href="route('posts.view', post.slug)" class="mb-4 font-sans font-bold text-3xl">{{post.title}}</Link>
-                <p class="pt-6 text-justify font-sans font-normal text-base">
+                <p class="mb-5 font-sans font-medium text-center lg:text-left text-sm sm:text-2xl">{{post.place}} | {{post.date}}</p>
+                <Link :href="route('posts.view', post.slug)" class="mb-4 font-sans font-bold text-xl sm:text-3xl">{{post.title}}</Link>
+                <p class="pt-6 text-justify font-sans font-normal text-sm sm:text-base">
                     {{post.description}}
                 </p>
             </div>

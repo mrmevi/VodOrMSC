@@ -10,8 +10,8 @@ export default {
     ],
     theme: {
         screens: {
-            'min': '300px',
-            // => @media (min-width: 640px) { ... }
+            'mm': '300px',
+            // => @media (min-width: 300px) { ... }
             'sm': '640px',
             // => @media (min-width: 640px) { ... }
             'md': '768px',
