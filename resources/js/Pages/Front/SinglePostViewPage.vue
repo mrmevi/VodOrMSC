@@ -40,7 +40,7 @@ export default defineComponent({
                  :src="post.data.thumbnail" alt="">
 
             <div>
-                <p v-html="post.data.content" class="mt-10 font-sans text-justify text-gray-700 font-normal text-base sm:text-xl 2xl:text-2xl indent-8 mx-auto max-w-[900px]">
+                <p v-html="post.data.content" class="ck-content mt-10 font-sans text-justify text-gray-700 font-normal text-base sm:text-xl 2xl:text-2xl indent-8 mx-auto max-w-[900px]">
                 </p>
             </div>
 

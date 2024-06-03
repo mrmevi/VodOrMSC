@@ -97,8 +97,10 @@ class PostController extends Controller
     public function destroy(string $id){
         $post = Post::find($id);
 
+
+        Storage::disk('public')->delete('path/file.jpg');
         if ($post->thumbnail) {
-            Storage::delete($post->thumbnail);
+            Storage::disk('public')->delete($post->thumbnail);
         }
 
         if ($post->images){
@@ -106,7 +108,7 @@ class PostController extends Controller
             foreach ($images as $image){
                 $image->delete();
             }
-            Storage::deleteDirectory('images/posts/' . $post->id);
+            Storage::disk('public')->deleteDirectory('images/posts/' . $post->id);
         }
 
         $post->delete();
