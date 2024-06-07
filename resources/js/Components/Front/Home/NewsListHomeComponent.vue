@@ -28,10 +28,12 @@ export default defineComponent({
                 <div class="">
                     <img class="mx-auto max-h-[600px] lg:max-h-[600px]" :src="firstPost.data.thumbnail" alt="">
                 </div>
-
-                <p class="pt-8 font-sans font-medium text-sm">{{ firstPost.data.place }} | {{ firstPost.data.date }}</p>
+                <div>
+                    <p v-if="!firstPost.data.place" class="mb-2 font-sans font-medium text-sm">{{ firstPost.data.date }}</p>
+                    <p v-if="firstPost.data.place" class="mb-2 font-sans font-medium text-sm">{{ firstPost.data.place }} | {{ firstPost.data.date }}</p>
+                </div>
                 <h2 class="pt-4 font-sans font-bold text-2xl">{{ firstPost.data.title }}</h2>
-                <p class="pt-5 text-justify font-sans font-normal text-base indent-8">
+                <p v-if="firstPost.data.description" class="pt-5 text-justify font-sans font-normal text-base indent-8">
                     {{ firstPost.data.description }}
                 </p>
                 <div class="mt-12 flex flex-col space-y-4 w-fit">
@@ -54,15 +56,16 @@ export default defineComponent({
 
             <div v-for="(post, id) in posts.data" :key="id"
                  class="hover:bg-gray-200 mb-4 sm:ml-11 sm:px-2 py-2.5">
-
-                <p class="mb-2 font-sans font-medium text-sm">{{ post.place }} | {{ post.date }}</p>
+                <div>
+                    <p v-if="!post.place" class="mb-2 font-sans font-medium text-sm">{{ post.date }}</p>
+                    <p v-if="post.place" class="mb-2 font-sans font-medium text-sm">{{ post.place }} | {{ post.date }}</p>
+                </div>
                 <h2 class="text-clip overflow-hidden ... max-h-[100px] mb-2 sm:ml-12 font-sans font-bold text-2xl">
                     <Link :href="route('posts.view', post.slug)">{{ post.title }}</Link>
                 </h2>
-                <p class="text-clip overflow-hidden ... max-h-[100px] 3xl:mr-8 font-sans font-normal text-base">
+                <p v-if="post.description" class="text-clip overflow-hidden ... max-h-[100px] 3xl:mr-8 font-sans font-normal text-base">
                     {{ post.description }}
                 </p>
-
             </div>
 
             <div class="lg:hidden flex sm:max-xl:mx-auto flex-col space-y-4 w-fit">

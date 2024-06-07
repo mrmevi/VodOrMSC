@@ -30,9 +30,12 @@ export default defineComponent({
 
 
             <div class="py-8 2xl:py-14 max-xl:mx-auto max-w-[700px]">
-                <p class="mb-5 font-sans font-medium text-center lg:text-left text-sm sm:text-2xl">{{post.place}} | {{post.date}}</p>
+                <div>
+                    <p v-if="!post.place" class="mb-2 font-sans font-medium text-sm">{{ post.date }}</p>
+                    <p v-if="post.place" class="mb-2 font-sans font-medium text-sm">{{ post.place }} | {{ post.date }}</p>
+                </div>
                 <Link :href="route('posts.view', post.slug)" class="mb-4 font-sans font-bold text-xl sm:text-3xl">{{post.title}}</Link>
-                <p class="pt-6 text-justify font-sans font-normal text-sm sm:text-base">
+                <p v-if="post.description" class="pt-6 text-justify font-sans font-normal text-sm sm:text-base">
                     {{post.description}}
                 </p>
             </div>
