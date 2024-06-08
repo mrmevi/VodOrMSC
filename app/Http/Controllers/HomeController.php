@@ -29,8 +29,6 @@ class HomeController extends Controller
     }
 
     public function test(){
-        return Inertia::render('Test', [
 
-        ]);
     }
 }

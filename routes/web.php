@@ -28,7 +28,7 @@ Route::get('/logout', 'App\Http\Controllers\UserController@logout')->name('user.
 
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home.page');
-Route::get('/test', 'App\Http\Controllers\HomeController@test')->name('test');
+/*Route::get('/test', 'App\Http\Controllers\HomeController@test')->name('test');*/
 Route::get('/posts', 'App\Http\Controllers\PostController@index')->name('posts.page');
 Route::get('/posts/{slug}', 'App\Http\Controllers\PostController@viewPost')->name('posts.view');
 Route::get('/new', 'App\Http\Controllers\PostController@viewPost')->name('viewPost.page');
